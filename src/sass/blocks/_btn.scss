@@ -1,0 +1,13 @@
+.btn {
+    height: 52px;
+    width: 130px;
+    background: $blue-color;
+    border-radius: 32px;
+    transition: all 0.2s ease;
+    &:hover {
+        background: #2a57b2;
+    }
+    &:active {
+        transform: scale(0.95);
+    }
+}

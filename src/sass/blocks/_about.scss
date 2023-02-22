@@ -1,0 +1,121 @@
+.about {
+    position: relative;
+    padding: 90px 0;
+    &:hover .about__illustration {
+        transform: translateX(-20px) translateY(-20px);
+    }
+    // .about__container
+    // .about__info
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+    }
+    // .about__item
+    &__item {
+        display: grid;
+        grid-template-columns: 80px 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 24px;
+    }
+    // .about__item-icon
+    &__item-icon {
+        grid-area: 2 span;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        background-color: rgba(255,255,255,0.1);
+        border-radius: 50%;
+        img {
+            width: 32px;
+            display: block;
+        }
+    }
+    // .about__item-title
+    &__item-title {
+        color: #fff;
+    }
+    // .about__item-text
+    &__item-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.01em;
+        color: #E0E0E0;
+    }
+    // .about__body
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    // .about__img
+    &__img {
+        flex: 0 0 650px;
+        transition: transform 0.3s ease-out;
+    }
+    &__illustration {
+        transition: transform 0.3s ease-out;
+        width: 100%;
+        display: block;
+    }
+    // .about__content
+    &__content {
+        flex: 0 1 480px;
+    }
+    // .about__title
+    &__title {
+        margin-bottom: 24px;
+        opacity: 0; 
+        transform: translateY(50px); 
+        transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+    }
+    &__title.show {
+        opacity: 1; 
+        transform: translateY(0);
+    }
+    // .about__text
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.01em;
+        color: #E0E0E0;
+        margin-bottom: 32px;
+    }
+    // .about__btn
+    &__btn {
+        width: 146px;
+        display: block;
+        padding: 16px 24px;
+    }
+    // .about__shape
+    &__shape {
+        position: absolute;
+        // .about__shape_01
+        &_01 {
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+        // .about__shape_02
+        &_02 {
+            right: 0;
+            top: 0;
+            z-index: -1;
+        }
+        // .about__shape_03
+        &_03 {
+            left: -40%;
+            bottom: -250px;
+            z-index: -1;
+        }
+    }
+}
+
+

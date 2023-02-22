@@ -1,0 +1,113 @@
+.earn {
+    padding-top: 100px;
+    // .earn__title
+    &__title {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    // .earn__subtitle
+    &__subtitle {
+        max-width: 620px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+        color: #E0E0E0;
+        display: block;
+        margin: 0 auto 64px auto;
+    }
+    // .earn__body
+    &__body {
+        width: 942px;
+        margin: 0 auto;
+        margin-bottom: -216px;
+        filter: drop-shadow(0px 20px 200px rgba(57, 23, 119, 0.05));
+    }
+    // .earn__form
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        padding: 48px;
+        background-color:#FBFCFE;
+        border-radius:16px 16px 0 0;
+        
+    }
+    // .earn__input
+    &__input {
+        flex: 0 0 403px;
+        border-bottom: 1px solid #E0E0E0;
+        background-color: transparent;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        color: #0D0D2B;
+        &::placeholder{
+            color: #0D0D2B;
+        }
+    }
+    // .earn__hash
+    &__hash {
+        flex: 0 0 200px;
+        border-bottom: 1px solid #E0E0E0;
+        background-color: transparent;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        color: #0D0D2B;
+    }
+    
+    // .earn__btn
+    &__btn {
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+    // .earn__result
+    &__result {
+        padding: 48px;
+        background-color:#FFFFFF;
+        border-radius: 0 0 16px 16px;
+    }
+    // .earn__head
+    &__head {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #3671E9;
+        margin-bottom: 16px;
+    }
+    // .earn__calculated
+    &__calculated {
+        display: inline-flex;
+        margin-bottom: 5px;
+    }
+    // .earn__calculated-coins
+    &__calculated-coins {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 150%;
+        letter-spacing: 0.04em;
+        color: #0D0D2B;
+    }
+    // .earn__calculated-money
+    &__calculated-money {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 150%;
+        letter-spacing: 0.04em;
+        color: #3671E9;
+        margin-left: 5px;
+    }
+    // .earn__text
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.01em;
+        color: #828282;
+    }
+}
+
+

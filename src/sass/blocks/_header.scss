@@ -1,0 +1,104 @@
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+    padding-top: 70px;
+    transition: all 0.3s ease-in-out;
+    &.scrolled {
+        transition: all 0.3s ease-in-out;
+        background-color: rgba(21, 21, 79, 0.95);
+        padding: 10px 0;
+        
+    }
+    // .header__container
+    &__container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    // .header__logo
+    &__logo {
+        flex: 1 1 auto;
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        img {
+            width: 40px;
+            display: block;
+            margin-right: 16px;
+        }
+        span {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0.04em;
+            color: #FFFFFF;
+            @media (max-width: 375px) {
+                display: none;
+            }
+        }
+    }
+    &__burger {
+        display: none;
+    }
+    // .header__list
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    // .header__item
+    &__item {
+        &:not(:last-child) {
+            margin-right: 32px;
+        }
+        &:last-child {
+            margin-right: 56px;
+        }
+    }
+    // .header__link
+    &__link {
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+        transition: all 0.2s ease;
+        &:hover {
+            color: $blue-color;
+        }
+
+    }
+    // .header__profile
+    &__profile {
+        display: flex;
+        align-items: center;
+    }
+    // .header__login
+    &__login {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: #FFFFFF;
+        margin-right: 24px;
+        transition: all 0.2s ease;
+        &:hover {
+            color: $blue-color;
+        }
+    }
+    // .header__line
+    &__line {
+        width: 0px;
+        height: 24px;
+        opacity: 0.3;
+        border: 1px solid #F2F2F2;
+    }
+    // .header__regist
+    &__regist {
+        margin-left: 24px;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+}
+

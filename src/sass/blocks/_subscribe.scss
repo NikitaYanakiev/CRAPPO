@@ -1,0 +1,110 @@
+.subscribe {
+    background: linear-gradient(180deg, #2B076E 0%, #0D0D2B 100%);
+    padding: 88px 0;
+    position: relative;
+    overflow: hidden;
+    // .subscribe__body
+    &__body {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $blue-color;
+        border-radius: 16px;
+        padding: 48px;
+        z-index: 3;
+    }
+    // .subscribe__shape
+    &__shape {
+        position: absolute;
+        // .subscribe__shape_eth
+        &_eth {
+            top: 0;
+            left: 22px;
+        }
+        // .subscribe__shape_btc
+        &_btc {
+            bottom: 0;
+            right: 15px;
+        }
+        // .subscribe__shape_01
+        &_01 {
+            bottom: 0;
+            left: 10%;
+        }
+        // .subscribe__shape_02
+        &_02 {
+            bottom: 0;
+            right: 10%;
+        }
+    }
+    // .subscribe__content
+    &__content {
+        flex: 0 1 500px;
+        position: relative;
+        z-index: 2;
+    }
+    // .subscribe__title
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 150%;
+        color: #FFFFFF;
+        margin-bottom: 16px;
+    }
+    // .subscribe__text
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+        max-width: 348px;
+    }
+    // .subscribe__form
+    &__form {
+        flex: 0 1 560px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        z-index: 2;
+    }
+    // .subscribe__input
+    &__input {
+        background-color: transparent;
+        flex: 0 1 374px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+        margin-right: 40px;
+        &::placeholder {
+            color: #FFFFFF;
+        }
+    }
+    // .subscribe__btn
+    &__btn {
+        width: 152px;
+        background: #FFFFFF;
+        padding: 14px 32px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+        color: #0D0D2B;
+        border-radius: 32px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover {
+            background-color: #bfbebe;
+        }
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+}
+
+

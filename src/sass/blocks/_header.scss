@@ -8,7 +8,6 @@
         transition: all 0.3s ease-in-out;
         background-color: rgba(21, 21, 79, 0.95);
         padding: 10px 0;
-        
     }
     // .header__container
     &__container {
@@ -64,8 +63,10 @@
         letter-spacing: 0.01em;
         color: #FFFFFF;
         transition: all 0.2s ease;
-        &:hover {
-            color: $blue-color;
+        @media (any-hover: hover) {
+            &:hover {
+                color: $blue-color;
+            }
         }
 
     }

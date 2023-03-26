@@ -84,32 +84,40 @@ function animateOnScrollThree() {
 document.addEventListener('DOMContentLoaded', animateOnScrollThree);
 document.addEventListener('scroll', animateOnScrollThree);
 
+const body = document.querySelector("body");
+
+
 
 const burger = document.querySelector('.header__burger');
 const menu = document.querySelector('.header__menu');
+const link = document.querySelectorAll('.header__link');
 
 burger.addEventListener('click', function() {
   menu.classList.toggle('active');
   burger.classList.toggle('active');
 });
 
+burger.addEventListener("click", function() {
+  body.classList.toggle("lock");
+});
+
+link.forEach(link => {
+  link.addEventListener('click', () => {
+    menu.classList.remove('active');
+    burger.classList.remove('active');
+    body.classList.remove('lock');
+  });
+});
+
 
 window.addEventListener("scroll", function() {
-  var header = document.querySelector("header");
-  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  const header = document.querySelector("header");
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   if (scrollTop > 40) {
     header.classList.add("scrolled");
   } else {
     header.classList.remove("scrolled");
   }
-});
-
-
-
-var body = document.querySelector("body");
-
-burger.addEventListener("click", function() {
-  body.classList.toggle("lock");
 });
 
 
@@ -175,3 +183,29 @@ input.addEventListener('keypress', function(event) {
     calculate();
   }
 });
+
+const anchors = document.querySelectorAll('a[href*="#"]');
+
+    for (let anchor of anchors) {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const blockID = anchor.getAttribute('href').substr(1);
+        
+        document.getElementById(blockID).scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      });
+    }
+
+    document.body.onload = function() {
+
+      setTimeout(() => {
+          var preloader  = document.getElementById('page-preloader');
+          if ( !preloader.classList.contains('done'))
+          {
+              preloader.classList.add('done');
+          }
+      }, 2000);
+  };
